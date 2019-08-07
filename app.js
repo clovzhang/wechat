@@ -1,4 +1,5 @@
 //app.js
+import request from './api/index.js'
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -35,5 +36,6 @@ App({
   },
   globalData: {
     userInfo: null
-  }
+  },
+  ...request
 })

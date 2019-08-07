@@ -1,14 +1,21 @@
 //index.js
 //获取应用实例
 const app = getApp()
+import swiper from './template/swiper/swiper.js'
+
 
 Page({
+  ...swiper.methods,
   data: {
-    motto: 'Hello World',
-    userInfo: {},
+    imgUrls: [
+      'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+      'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
+      'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
+    ],
+    indicatorDots: true,
     hasUserInfo: false,
-    time: (new Date()).toString(),
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    interval: 5000,
+    duration: 1000
   },
   //事件处理函数
   bindViewTap: function() {
@@ -51,5 +58,6 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+ 
 })

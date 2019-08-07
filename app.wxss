@@ -1,3 +1,4 @@
+@import 'assets/iconfont/iconfont.wxss';
 /**app.wxss**/
 .container {
   height: 100%;

@@ -1,0 +1,15 @@
+<template name="swiper">
+    <swiper
+      hidden='{{!imgUrls[0]}}'
+      indicator-dots="{{indicatorDots}}"
+      interval="{{interval}}"
+      autoplay
+      duration="{{duration}}"
+      indicator-active-color="rgba(255,102,0, 1)"
+      indicator-color="rgba(153, 153, 153, 1)"
+      class="index-banner">
+      <swiper-item class="index-banner-item"  wx:for="{{imgUrls}}" wx:key="{{item.id}}">
+        <image bindtap="goActivity" data-src="{{item.url}}" src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </swiper>
+</template>
