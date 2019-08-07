@@ -1,7 +1,8 @@
 <!--index.wxml-->
 <import src="/pages/index/template/swiper/swiper" />
+<import src="/pages/index/template/classify/classify"/>
 <view class="index">
   <!-- 轮播  -->
   <template is="swiper" data="{{imgUrls, indicatorDots, interval, duration}}"/>
-
+  <template is="classify"></template>
 </view>

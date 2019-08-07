@@ -1,12 +1,16 @@
 const app = getApp()
 export default {
   data:{
+    imgUrls: [
+      'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+      'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
+      'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
+    ],
     indicatorDots: true, // 轮播的索引导航显示
     autoplay: true, // 轮播是否自动切换
     interval: 2000, // 轮播切换时间
     duration: 500, // 轮播滑动动画的时长
     activeIndex: 0, // 导航菜单选中项
-    imgUrls: [], // 轮播的资源；路径
   },
   methods: {
     getAdInfo() { // 获取banner轮播图的数据

@@ -1,10 +1,13 @@
+<template name="classify">
 <view  class="classify">
-  <swiper bindchange="swiperChange" wx:if="{{iconList && iconList.length>0}}" class="content-icon">
-    <swiper-item wx:for="{{iconList}}" wx:for-item="list" wx:key="property">
-      <view class="icon" wx:for="{{list.list}}" wx:for-item="icon" bindtap="openGoodsList" wx:key="property" data-cid="{{icon.id}}" data-title="{{icon.name}}">
-        <image src="{{icon.picUrl}}" />
-        <text>{{icon.name}}</text>
+{{console.log('classifyList',classifyList)}}
+  <swiper bindchange="swiperChange" class="content-icon">
+    <swiper-item wx:for="{{classifyList}}" wx:for-item="list" wx:key="property">
+      <view class="icon" wx:for="{{classifyList}}" wx:for-item="icon" bindtap="openGoodsList" wx:key="property" data-cid="{{classifyList.id}}" data-title="{{classifyList.name}}">
+        <image src="{{classifyList.picUrl}}" />
+        <text>{{classifyList.name}}</text>
       </view>
     </swiper-item>
   </swiper>
 </view>
+</template>
