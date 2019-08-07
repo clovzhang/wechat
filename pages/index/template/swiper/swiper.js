@@ -10,7 +10,6 @@ export default {
   },
   methods: {
     getAdInfo() { // 获取banner轮播图的数据
-      console.log(1111)
       app.getAdInfo().then(data => {
         console.log('data', data)
         this.setData({

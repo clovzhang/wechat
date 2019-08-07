@@ -5,10 +5,10 @@
 const BASEURL = 'https://api.cnjiang.com/yph' // 正式环境地址
 
 export default function http({ url, data, method = "GET", contentType = "application/json" }, flag = true ) {
-  flag && wx.showLoading({
-    title: "加载中...",
-    mask: true
-  });
+  // flag && wx.showLoading({
+  //   title: "加载中...",
+  //   mask: true
+  // });
   return new Promise((resolve, reject) => {
     wx.request({
       url: BASEURL + url,
