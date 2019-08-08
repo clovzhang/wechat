@@ -21,12 +21,6 @@ export default {
     method: 'post',
     contentType: 'application/x-www-form-urlencoded'
   }),
-  getGoodsAreaStock: data => ajax({
-    url: `/api/goods/getIfGoodsMessage`,
-    data,
-    method: 'post',
-    contentType: 'application/x-www-form-urlencoded'
-  }),
   getGoodsRecommendList: data => ajax({
     url: '/api/goods/getRecommend',
     data,

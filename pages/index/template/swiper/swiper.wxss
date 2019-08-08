@@ -6,7 +6,6 @@
 
 .index-banner-item {
   box-sizing: border-box;
-  padding: 0 14rpx;
   margin: auto;
   height: 350rpx;
 }

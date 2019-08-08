@@ -4,5 +4,6 @@
 <view class="index">
   <!-- 轮播  -->
   <template is="swiper" data="{{imgUrls, indicatorDots, interval, duration}}"/>
-  <template is="classify"></template>
+  <template is="classify" data="{{classifyList}}"></template>
+  <view class="test1">werwe</view>
 </view>
