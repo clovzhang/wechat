@@ -3,6 +3,8 @@
 ## 项目结构
 - api --- 项目接口管理
 - assets --- 项目静态资源
+  + iconfont iconfont库
+  + images 项目图片
 - components --- 项目组件管理
 - pages --- 项目主页面(小程序默认加载的数据包)
 - template --- 项目模版
